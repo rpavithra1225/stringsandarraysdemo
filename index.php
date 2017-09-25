@@ -15,14 +15,23 @@
 
     }
 
-    public function printfunction($text) {
+    public function printstrfunc($text) {
       echo '<h1>print function demo </h1>';
       print($text);
       echo '<hr>';
     }
 
+    public function strfunc_explode($text) {
+      echo '<h1>explode function demo </h1>';
+      $pieces = explode(" ", $text);
+      echo $pieces[0];
+      echo $pieces[1];
+      echo '<hr>';
+    }
+
     public function stringfunctionsdemo($text) {
-      $this->printfunction($text);
+      $this->printstrfunc($text);
+      $this->strfunc_explode($text);
     }
 
     
