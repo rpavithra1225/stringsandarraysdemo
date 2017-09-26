@@ -103,7 +103,7 @@
       $this->arrfunc_arraychunk($array);
       $this->arrfunc_arrayslice($array);
       $this->arrfunc_arraydiff($array);
-      $this->strfunc_arrayfill($array);
+      $this->arrfunc_arrayfill($array);
       //$this->strfunc_substr($array);
       //$this->strfunc_substrcount($array);
       //$this->strfunc_strpos($array);
@@ -145,6 +145,12 @@
       $local = array(1,2,3,4,5);
       echo '<h1>array_diff function demo</h1>';
       print_r(array_diff($array,$local));
+      echo '<hr>';
+    }
+
+    public function arrfunc_arrayfill($array) {
+      echo '<h1>array_fill function demo</h1>';
+      print_r(array_fill(-5, 5, 'Hello<br/>'));
       echo '<hr>';
     }
 
