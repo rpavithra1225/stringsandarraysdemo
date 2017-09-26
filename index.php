@@ -5,7 +5,6 @@
   $text = "This is to demonstrate string functions";
   $obj->stringfunctionsdemo($text);
   
-  echo '<h1>Arrays</h1><br/>';
   $array = array(1, "hello", 1, "world", "hello");
   $obj->arrayfunctionsdemo($array);
 
@@ -97,6 +96,7 @@
     }
 
     public function arrayfunctionsdemo($array) {
+      echo '<h1>Arrays</h1><br/>';
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
       $this->arrfunc_arraycombine($array);
@@ -104,7 +104,7 @@
       $this->arrfunc_arrayslice($array);
       $this->arrfunc_arraydiff($array);
       $this->arrfunc_arrayfill($array);
-      //$this->strfunc_substr($array);
+      $this->arrfunc_arrayflip($array);
       //$this->strfunc_substrcount($array);
       //$this->strfunc_strpos($array);
     }
@@ -154,7 +154,12 @@
       echo '<hr>';
     }
 
-    
+    public function arrfunc_arrayflip($array) {
+      echo '<h1>array_flip function demo</h1>';
+      print_r(array_flip($array));
+      echo '<hr>';
+    }
+
     public function __destruct() {
 
       echo '</br> That\'s it! Thanks!';
