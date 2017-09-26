@@ -136,7 +136,7 @@
 
     public function arrfunc_arrayslice($array) {
       echo '<h1>array_slice function demo</h1>';
-      $output = array_slice($array, -3, -1,true);
+      print_r(array_slice($array, 2, -1, true));
       echo '<hr>';
     }
 
