@@ -16,7 +16,7 @@
     }
 
     public function stringfunctionsdemo($text) {
-      echo '<h1><u>Strings</u></h1>';
+      echo '<h1><u>String Functions</u></h1>';
       $this->printstrfunc($text);
       $this->strfunc_explode($text);
       $this->strfunc_similar($text);
@@ -95,7 +95,7 @@
     }
 
     public function arrayfunctionsdemo($array) {
-      echo '<h1><u>Arrays</u></h1>';
+      echo '<h1><u>Array Functions</u></h1>';
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
       $this->arrfunc_arraycombine($array);
