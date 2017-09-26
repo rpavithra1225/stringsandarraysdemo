@@ -105,7 +105,7 @@
       $this->arrfunc_arraydiff($array);
       $this->arrfunc_arrayfill($array);
       $this->arrfunc_arrayflip($array);
-      //$this->strfunc_substrcount($array);
+      $this->arrfunc_arraykeyexists();
       //$this->strfunc_strpos($array);
     }
 
@@ -157,6 +157,15 @@
     public function arrfunc_arrayflip($array) {
       echo '<h1>array_flip function demo</h1>';
       print_r(array_flip($array));
+      echo '<hr>';
+    }
+
+     public function arrfunc_arraykeyexists($array) {
+      echo '<h1>array_key_exists function demo</h1>';
+      $search_array = array('first' => 1, 'second' => 4);
+      if (array_key_exists('first', $search_array)) {
+          echo "The 'first' element is in the array";
+      }
       echo '<hr>';
     }
 
