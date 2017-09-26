@@ -73,6 +73,12 @@
       echo '<hr>';
     }
 
+    public function strfunc_strpos($text) {
+      echo '<h1>strpos function demo </h1>';
+      echo strpos($text, 's', 4);
+      echo '<hr>';
+    }
+
     public function stringfunctionsdemo($text) {
       $this->printstrfunc($text);
       $this->strfunc_explode($text);
