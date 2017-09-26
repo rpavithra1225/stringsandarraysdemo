@@ -1,5 +1,4 @@
 <?php
-
   
   $obj = new main();
   $text = "This is to demonstrate string functions";
@@ -9,6 +8,12 @@
   $obj->arrayfunctionsdemo($array);
 
   class main {
+
+    public function __construct() {
+
+      echo '<h1 align ="center"><u>String and Array functions</h1></u>';
+
+    }
 
     public function stringfunctionsdemo($text) {
       echo '<h1><u>Strings</u></h1>';
@@ -22,13 +27,6 @@
       $this->strfunc_substr($text);
       $this->strfunc_substrcount($text);
       $this->strfunc_strpos($text);
-    }
-
-
-    public function __construct() {
-
-      echo '<h1 align ="center"><u>String and Array functions</h1></u>';
-
     }
 
     public function printstrfunc($text) {
@@ -188,7 +186,6 @@
       echo '</br><h3> That\'s it! Thanks!</h3>';
 
     }
-
 
   }
 
