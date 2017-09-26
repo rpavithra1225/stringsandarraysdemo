@@ -134,7 +134,11 @@
       echo '<hr>';
     }
 
-    
+    public function arrfunc_arrayslice($array) {
+      echo '<h1>array_slice function demo</h1>';
+      $output = array_slice($array, -3, -1,true);
+      echo '<hr>';
+    }
 
     public function __destruct() {
 
