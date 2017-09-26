@@ -61,6 +61,12 @@
       echo '<hr>';
     }
 
+    public function strfunc_substr($text) {
+      echo '<h1>substr function demo </h1>';
+      echo substr($text, -4, 3);
+      echo '<hr>';
+    }
+
     public function strfunc_substrcount($text) {
       echo '<h1>substr_count function demo </h1>';
       echo substr_count($text, 'is', 3);
@@ -75,7 +81,9 @@
       $this->strfunc_strrepeat();
       $this->strfunc_strpad();
       $this->strfunc_strreverse($text);
+      $this->strfunc_substr($text);
       $this->strfunc_substrcount($text);
+      $this->strfunc_strpos($text);
     }
 
     
