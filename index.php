@@ -61,7 +61,11 @@
       echo '<hr>';
     }
 
-    
+    public function strfunc_substrcount($text) {
+      echo '<h1>substr_count function demo </h1>';
+      echo substr_count($text, 'is', 3);
+      echo '<hr>';
+    }
 
     public function stringfunctionsdemo($text) {
       $this->printstrfunc($text);
