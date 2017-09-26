@@ -4,7 +4,6 @@
   $text = "This is to demonstrate string functions";
   $obj->stringfunctionsdemo($text);
   
-  $array = array(1,2,3,4,5,6,7);
   //$obj->printArray($array);
 
   class main {
@@ -29,9 +28,21 @@
       echo '<hr>';
     }
 
+    public function strfunc_similar($text) {
+      echo '<h1>similar_text function demo </h1>';
+      $percent = similar_text(" ", $text, $percent);
+      echo $percent;
+      echo '<hr>';
+    }
+
+    
+
     public function stringfunctionsdemo($text) {
       $this->printstrfunc($text);
       $this->strfunc_explode($text);
+      $this->strfunc_similar($text);
+      $this->strfunc_strreplace($text);
+      $this->strfunc_strrepeat();
     }
 
     
