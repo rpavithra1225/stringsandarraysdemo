@@ -55,6 +55,14 @@
       echo '<hr>';
     }
 
+    public function strfunc_strreverse($text) {
+      echo '<h1>strrev function demo </h1>';
+      echo strrev($text);
+      echo '<hr>';
+    }
+
+    
+
     public function stringfunctionsdemo($text) {
       $this->printstrfunc($text);
       $this->strfunc_explode($text);
@@ -62,6 +70,8 @@
       $this->strfunc_strreplace($text);
       $this->strfunc_strrepeat();
       $this->strfunc_strpad();
+      $this->strfunc_strreverse($text);
+      $this->strfunc_substrcount($text);
     }
 
     
