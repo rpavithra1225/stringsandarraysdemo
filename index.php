@@ -102,8 +102,8 @@
       $this->arrfunc_arraycombine($array);
       $this->arrfunc_arraychunk($array);
       $this->arrfunc_arrayslice($array);
-      //$this->strfunc_strpad($array);
-      //$this->strfunc_strreverse($array);
+      $this->arrfunc_arraydiff($array);
+      $this->strfunc_arrayfill($array);
       //$this->strfunc_substr($array);
       //$this->strfunc_substrcount($array);
       //$this->strfunc_strpos($array);
@@ -136,10 +136,19 @@
 
     public function arrfunc_arrayslice($array) {
       echo '<h1>array_slice function demo</h1>';
-      print_r(array_slice($array, 2, -1, true));
+      print_r(array_slice($array,-3, -1, true));
       echo '<hr>';
     }
 
+
+    public function arrfunc_arraydiff($array) {
+      $local = array(1,2,3,4,5);
+      echo '<h1>array_diff function demo</h1>';
+      print_r(array_diff($array,$local));
+      echo '<hr>';
+    }
+
+    
     public function __destruct() {
 
       echo '</br> That\'s it! Thanks!';
