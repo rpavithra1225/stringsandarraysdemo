@@ -31,7 +31,7 @@
 
     public function printstrfunc($text) {
       echo '<h1>1. print function demo </h1>';
-      print($text);
+      print("String: ".$text);
       echo '<hr>';
     }
 
@@ -46,7 +46,7 @@
     public function strfunc_similar($text) {
       echo '<h1>3. similar_text function demo </h1>';
       $percent = similar_text(" ", $text, $percent);
-      echo $percent;
+      echo "String: ".$text." | Similarity percentage: ".$percent;
       echo '<hr>';
     }
 
@@ -54,43 +54,43 @@
       echo '<h1>4. str_replace function demo </h1>';
       $vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
       $replacedstr = str_replace($vowels, " ", $text);
-      echo $replacedstr;
+      echo "String: ".$text." | Replaced String: ".$replacedstr;
       echo '<hr>';
     }
 
     public function strfunc_strrepeat() {
       echo '<h1>5. str_repeat function demo </h1>';
-      echo str_repeat("Repeat", 10);
+      echo "String Repeated: ".str_repeat("Repeat", 10);
       echo '<hr>';
     }
 
     public function strfunc_strpad() {
       echo '<h1>6. str_pad function demo </h1>';
-      echo str_pad("Welcome", 10, "_", STR_PAD_BOTH);
+      echo "String Padded: ".str_pad("Welcome", 10, "_", STR_PAD_BOTH);
       echo '<hr>';
     }
 
     public function strfunc_strreverse($text) {
       echo '<h1>7. strrev function demo </h1>';
-      echo strrev($text);
+      echo "String: ".$text." | Reversed String: ".strrev($text);
       echo '<hr>';
     }
 
     public function strfunc_substr($text) {
       echo '<h1>8. substr function demo </h1>';
-      echo substr($text, -4, 3);
+      echo "String: ".$text." | Sub String: ".substr($text, -4, 3);
       echo '<hr>';
     }
 
     public function strfunc_substrcount($text) {
       echo '<h1>9. substr_count function demo </h1>';
-      echo substr_count($text, 'is', 3);
+      echo "String: ".$text." | Substring count: ".substr_count($text, 'is', 3);
       echo '<hr>';
     }
 
     public function strfunc_strpos($text) {
       echo '<h1>10. strpos function demo </h1>';
-      echo strpos($text, 's', 4);
+      echo "String: ".$text." | Position of 's' in the string: ".strpos($text, 's', 4);
       echo '<hr>';
     }
 
