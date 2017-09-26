@@ -35,6 +35,14 @@
       echo '<hr>';
     }
 
+    public function strfunc_strreplace($text) {
+      echo '<h1>str_replace function demo </h1>';
+      $vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+      $replacedstr = str_replace($vowels, " ", $text);
+      echo $replacedstr;
+      echo '<hr>';
+    }
+
     
 
     public function stringfunctionsdemo($text) {
