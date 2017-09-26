@@ -106,7 +106,7 @@
       $this->arrfunc_arrayfill($array);
       $this->arrfunc_arrayflip($array);
       $this->arrfunc_arraykeyexists();
-      //$this->strfunc_strpos($array);
+      $this->arrfunc_rsort($array);
     }
 
     public function arrfunc_arraycount($array) {
@@ -160,12 +160,25 @@
       echo '<hr>';
     }
 
-     public function arrfunc_arraykeyexists($array) {
+     public function arrfunc_arraykeyexists() {
       echo '<h1>array_key_exists function demo</h1>';
+
       $search_array = array('first' => 1, 'second' => 4);
+
       if (array_key_exists('first', $search_array)) {
           echo "The 'first' element is in the array";
       }
+      echo '<hr>';
+    }
+
+    public function arrfunc_rsort($array) {
+      echo '<h1>array_rsort function demo</h1>';
+      
+      rsort($array);
+      foreach ($array as $key => $val) {
+          echo "$key = $val\n";
+      }
+
       echo '<hr>';
     }
 
