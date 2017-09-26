@@ -43,7 +43,11 @@
       echo '<hr>';
     }
 
-    
+    public function strfunc_strrepeat($text) {
+      echo '<h1>str_repeat function demo </h1>';
+      echo str_repeat("Repeat", 10);
+      echo '<hr>';
+    }
 
     public function stringfunctionsdemo($text) {
       $this->printstrfunc($text);
