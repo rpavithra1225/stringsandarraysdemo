@@ -99,7 +99,7 @@
     public function arrayfunctionsdemo($array) {
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
-      //$this->strfunc_similar($array);
+      $this->arrfunc_arraycombine($array);
       //$this->strfunc_strreplace($array);
       //$this->strfunc_strrepeat($array);
       //$this->strfunc_strpad($array);
@@ -118,6 +118,13 @@
     public function arrfunc_arrayunique($array) {
       echo '<h1>array_unique function demo</h1>';
       print_r(array_unique($array));
+      echo '<hr>';
+    }
+
+    public function arrfunc_arraycombine($array) {
+      $arraydummy = array('11','22','33','44','55');
+      echo '<h1>array_combine function demo</h1>';
+      print_r(array_combine($arraydummy, $array));
       echo '<hr>';
     }
 
