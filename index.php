@@ -115,7 +115,11 @@
       echo '<hr>';
     }
 
-    
+    public function arrfunc_arrayunique($array) {
+      echo '<h1>array_unique function demo</h1>';
+      print_r(array_unique($array));
+      echo '<hr>';
+    }
 
     public function __destruct() {
 
