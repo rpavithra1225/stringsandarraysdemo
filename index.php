@@ -10,9 +10,24 @@
 
   class main {
 
+    public function stringfunctionsdemo($text) {
+      echo '<h1><u>Strings</u></h1>';
+      $this->printstrfunc($text);
+      $this->strfunc_explode($text);
+      $this->strfunc_similar($text);
+      $this->strfunc_strreplace($text);
+      $this->strfunc_strrepeat();
+      $this->strfunc_strpad();
+      $this->strfunc_strreverse($text);
+      $this->strfunc_substr($text);
+      $this->strfunc_substrcount($text);
+      $this->strfunc_strpos($text);
+    }
+
+
     public function __construct() {
 
-      echo 'Hello! Let\'s get started </br>';
+      echo '<h1 align ="center"><u>String and Array functions</h1></u>';
 
     }
 
@@ -81,22 +96,8 @@
       echo '<hr>';
     }
 
-    public function stringfunctionsdemo($text) {
-      echo '<h1>Strings</h1><br/>';
-      $this->printstrfunc($text);
-      $this->strfunc_explode($text);
-      $this->strfunc_similar($text);
-      $this->strfunc_strreplace($text);
-      $this->strfunc_strrepeat();
-      $this->strfunc_strpad();
-      $this->strfunc_strreverse($text);
-      $this->strfunc_substr($text);
-      $this->strfunc_substrcount($text);
-      $this->strfunc_strpos($text);
-    }
-
     public function arrayfunctionsdemo($array) {
-      echo '<h1>Arrays</h1><br/>';
+      echo '<h1><u>Arrays</u></h1>';
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
       $this->arrfunc_arraycombine($array);
@@ -184,13 +185,11 @@
 
     public function __destruct() {
 
-      echo '</br> That\'s it! Thanks!';
+      echo '</br><h3> That\'s it! Thanks!</h3>';
 
     }
 
 
   }
-
-
 
 ?>
