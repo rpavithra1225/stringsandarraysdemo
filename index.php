@@ -100,8 +100,8 @@
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
       $this->arrfunc_arraycombine($array);
-      //$this->strfunc_strreplace($array);
-      //$this->strfunc_strrepeat($array);
+      $this->arrfunc_arraychunk($array);
+      $this->arrfunc_arrayslice($array);
       //$this->strfunc_strpad($array);
       //$this->strfunc_strreverse($array);
       //$this->strfunc_substr($array);
@@ -127,6 +127,14 @@
       print_r(array_combine($arraydummy, $array));
       echo '<hr>';
     }
+
+    public function arrfunc_arraychunk($array) {
+      echo '<h1>array_chunk function demo</h1>';
+      print_r(array_chunk($array, 2, true));
+      echo '<hr>';
+    }
+
+    
 
     public function __destruct() {
 
