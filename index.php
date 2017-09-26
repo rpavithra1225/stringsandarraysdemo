@@ -1,10 +1,13 @@
 <?php
 
+  
   $obj = new main();
   $text = "This is to demonstrate string functions";
   $obj->stringfunctionsdemo($text);
   
-  //$obj->printArray($array);
+  echo '<h1>Arrays</h1><br/>';
+  $array = array(1, "hello", 1, "world", "hello");
+  $obj->arrayfunctionsdemo($array);
 
   class main {
 
@@ -80,6 +83,7 @@
     }
 
     public function stringfunctionsdemo($text) {
+      echo '<h1>Strings</h1><br/>';
       $this->printstrfunc($text);
       $this->strfunc_explode($text);
       $this->strfunc_similar($text);
@@ -92,13 +96,27 @@
       $this->strfunc_strpos($text);
     }
 
-    
-
     public function arrayfunctionsdemo($array) {
-      echo '<h1>array print function</h1>';
-      print_r($array);
+      $this->arrfunc_arraycount($array);
+      $this->arrfunc_arrayunique($array);
+      //$this->strfunc_similar($array);
+      //$this->strfunc_strreplace($array);
+      //$this->strfunc_strrepeat($array);
+      //$this->strfunc_strpad($array);
+      //$this->strfunc_strreverse($array);
+      //$this->strfunc_substr($array);
+      //$this->strfunc_substrcount($array);
+      //$this->strfunc_strpos($array);
+    }
+
+    public function arrfunc_arraycount($array) {
+      echo '<h1>array_count_values function demo</h1>';
+      print_r(array_count_values($array));
       echo '<hr>';
     }
+
+    
+
     public function __destruct() {
 
       echo '</br> That\'s it! Thanks!';
