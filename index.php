@@ -43,9 +43,15 @@
       echo '<hr>';
     }
 
-    public function strfunc_strrepeat($text) {
+    public function strfunc_strrepeat() {
       echo '<h1>str_repeat function demo </h1>';
       echo str_repeat("Repeat", 10);
+      echo '<hr>';
+    }
+
+    public function strfunc_strpad() {
+      echo '<h1>str_pad function demo </h1>';
+      echo str_pad("Welcome", 10, "_", STR_PAD_BOTH);
       echo '<hr>';
     }
 
@@ -55,6 +61,7 @@
       $this->strfunc_similar($text);
       $this->strfunc_strreplace($text);
       $this->strfunc_strrepeat();
+      $this->strfunc_strpad();
     }
 
     
