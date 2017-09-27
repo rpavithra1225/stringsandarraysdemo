@@ -38,6 +38,7 @@
     public function strfunc_explode($text) {
       echo '<h1>2. explode function demo </h1>';
       $pieces = explode(" ", $text);
+      echo "String: ".$text. " | Spliced text: ";
       echo $pieces[0];
       echo $pieces[1];
       echo '<hr>';
@@ -90,12 +91,14 @@
 
     public function strfunc_strpos($text) {
       echo '<h1>10. strpos function demo </h1>';
-      echo "String: ".$text." | Position of 's' in the string: ".strpos($text, 's', 4);
+      echo "String: ".$text." | Position of 's' in the string: ".strpos($text, 's',0);
       echo '<hr>';
     }
 
     public function arrayfunctionsdemo($array) {
       echo '<h1><u>Array Functions</u></h1>';
+      echo 'Array used: ';
+      print_r($array);
       $this->arrfunc_arraycount($array);
       $this->arrfunc_arrayunique($array);
       $this->arrfunc_arraycombine($array);
